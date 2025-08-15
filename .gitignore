@@ -1,1 +1,5 @@
+# VSCode
 *.code-workspace
+
+# Python
+*__pycache__
