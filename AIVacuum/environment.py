@@ -1,7 +1,7 @@
-class Ambient:
+class Environment:
 	def __init__(self):
 		self.state = ["Dirty", "Clean"]
 
 	def show(self):
-		print(f'Ambient: {self.state}')
+		print(f'Environment: {self.state}')
 

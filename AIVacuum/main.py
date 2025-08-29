@@ -1,15 +1,15 @@
 from vacuum import Vacuum
-from ambient import Ambient
+from environment import Environment
 
-ambient = Ambient()
+environment = Environment()
 vacuum = Vacuum()
 
 print('Initial state')
-ambient.show()
+environment.show()
 
 for _ in range(4):
-	vacuum.action(ambient)
+	vacuum.action(environment)
 
 print('Show state')
-ambient.show()
+environment.show()
 
