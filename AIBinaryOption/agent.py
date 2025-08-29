@@ -4,7 +4,7 @@ class Agent:
 		self.agentTask = agentTask
 		self.history = []
 
-	def show_state():
+	def show_state(self):
 		return str(self.state)
 
 	def perception(self):
