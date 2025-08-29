@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from data_importer import DataImporter as dt_imp
 
-price_quote = dt_imp.pull_data_from('bcdata.sgs.10813.csv')
+price_quote = dt_imp.pull_data_from('assets/bcdata.sgs.10813.csv')
 
 x = [i for i in range(len(price_quote))]
 y = list(reversed(price_quote))
