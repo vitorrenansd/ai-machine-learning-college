@@ -7,4 +7,3 @@ plt.plot(x, y)
 plt.xlabel('Time (day)')
 plt.ylabel('USD')
 plt.show()
-

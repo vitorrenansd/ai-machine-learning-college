@@ -4,10 +4,9 @@ class Agent:
 		self.agentTask = agentTask
 		self.history = []
 
-	def showState():
+	def show_state():
 		return str(self.state)
 
 	def perception(self):
 		entrance = input('Value: ')
 		self.history.append(entrance)
-

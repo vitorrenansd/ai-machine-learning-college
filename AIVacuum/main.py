@@ -12,4 +12,3 @@ for _ in range(4):
 
 print('Show state')
 environment.show()
-

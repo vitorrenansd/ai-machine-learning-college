@@ -7,6 +7,5 @@ class Environment:
 	def perception(self, agent):
 		return None
 
-	def addAgent(self, agent):
+	def add_agent(self, agent):
 		self.agents.append(agent)
-

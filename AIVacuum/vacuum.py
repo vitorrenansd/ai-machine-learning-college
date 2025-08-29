@@ -17,4 +17,3 @@ class Vacuum:
 	def move(self):
 		self.position = 1 if self.position == 0 else 0
 		print(f'Moving to position {self.position}')
-

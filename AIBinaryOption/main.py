@@ -11,6 +11,4 @@ with open('bcdata.sgs.10813.csv', encoding='UTF-8') as file:
 		value = float(value_str)
 		price_quote.append(value)
 
-
 print(price_quote)
-
