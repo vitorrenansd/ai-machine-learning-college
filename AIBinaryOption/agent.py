@@ -1,7 +1,7 @@
 class Agent:
-	def __init__(self, state=None, agentTask=None):
+	def __init__(self, state=None, gent_task=None):
 		self.state = state
-		self.agentTask = agentTask
+		self.agent_task = gent_task
 		self.history = []
 
 	def show_state(self):

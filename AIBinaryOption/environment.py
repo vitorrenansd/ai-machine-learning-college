@@ -1,7 +1,7 @@
 class Environment:
-	def __init__(self, initialState=None):
-		self.state = initialState
-		self.environmentObj = []
+	def __init__(self, initial_state=None):
+		self.state = initial_state
+		self.environment_obj = []
 		self.agents = []
 
 	def perception(self, agent):
