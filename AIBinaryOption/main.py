@@ -1,12 +1,12 @@
-from agent import Agent
-from environment import Environment
+import matplotlib.pyplot as plt
+from data_importer import DataImporter as dt_imp
 
-price_quote = []
+price_quote = dt_imp.pull_data_from(dt_imp, '/assets/bcdata.sgs.10813.csv')
 
-with open('bcdata.sgs.10813.csv', encoding='UTF-8') as file:
-	lines = file.readlines()
-	for line in lines[1:]:
-		parts = line.strip().split(';')
-		value_str = parts[1].replace('"', '').replace(',', '.')
-		value = float(value_str)
-		price_quote.append(value)
+x = [i for i in range(len(price_quote))]
+y = list(reversed(price_quote))
+
+plt.plot(x, y)
+plt.xlabel('Time (day)')
+plt.ylabel('USD')
+plt.show()
