@@ -10,11 +10,13 @@ class Vacuum:
 		if perception == "Dirty":
 			ambient.state[self.position] = "Clean"
 			print(f'Cleaning position {self.position}')
+		if perception == "X":
+			print('Jumping over an obstacle')
 		else:
 			print(f'This place is already cleaned')
-		self.move()
+		self.move(ambient)
 
-	def move(self):
+	def move(self, ambient):
 		if self.position < 8:
 			self.position += 1
-			print(f'Moving to position {self.position}')
+			print(f'Moving to position {self.position}')			
