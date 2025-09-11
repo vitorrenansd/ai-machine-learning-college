@@ -7,8 +7,7 @@ vacuum = Vacuum()
 print('Initial state')
 environment.show()
 
-for _ in range(4):
+for _ in range(9):
 	vacuum.action(environment)
 
-print('Show state')
 environment.show()
