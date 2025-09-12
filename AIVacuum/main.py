@@ -1,7 +1,7 @@
 from vacuum import Vacuum
 from environment import Environment
 
-environment = Environment()
+environment = Environment(["Dirty", "Clean", "X", "Dirty", "X", "Dirty", "Dirty", "Clean", "X"])
 vacuum = Vacuum()
 
 print('Initial state')
