@@ -3,4 +3,4 @@ class Environment:
 		self.state = state
 
 	def show(self):
-		print(f'Environment: {self.state}')
+		return self.state
