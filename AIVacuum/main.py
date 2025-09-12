@@ -10,4 +10,4 @@ print(f'Initial state: {environment.show()}')
 for _ in range(room_size):
 	vacuum.action(environment)
 
-environment.show()
+print(f'Final state: {environment.show()}')
