@@ -23,7 +23,8 @@ class Vacuum:
 		self.move(ambient)
 
 	def move(self, ambient):
-		if self.position < 8:
+		max_pos = len(ambient.state) - 1
+		if self.position < max_pos:
 			self.position += 1
 			self.battery -= 2
 			self.show_battery()	
