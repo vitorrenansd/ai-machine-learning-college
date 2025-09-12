@@ -1,6 +1,6 @@
 class Environment:
-	def __init__(self):
-		self.state = ["Dirty", "Clean", "X", "Dirty", "X", "Dirty", "Dirty", "Clean", "X"]
+	def __init__(self, state):
+		self.state = state
 
 	def show(self):
 		print(f'Environment: {self.state}')
