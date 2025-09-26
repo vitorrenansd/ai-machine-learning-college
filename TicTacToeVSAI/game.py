@@ -1,5 +1,3 @@
-from brute_force_agent import BruteForceAgent
-
 class Game:
 
     def play_with(self, agent):
