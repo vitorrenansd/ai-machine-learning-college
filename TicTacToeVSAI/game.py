@@ -1,4 +1,6 @@
 class Game:
+    def __init__(self):
+        self.available_pos = []
 
     def show_board_status(board):
         print("  0    1   2 ")
