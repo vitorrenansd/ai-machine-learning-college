@@ -1,6 +1,8 @@
+from brute_force_agent import BruteForceAgent
+
 class Game:
 
-    def play(self):
+    def play_with(self, agent):
         board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
         print("Welcome!")
         self.show_board_status(board)
