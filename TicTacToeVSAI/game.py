@@ -9,6 +9,15 @@ class Game:
             if i < 2:
                 print(" " + "-" * 13)
 
+    def get_available_pos(self, board):
+        self.available_pos.clear()
+        for i in range(3):
+            for j in range(3):
+                if board[i][j] == " ":
+                    self.available_pos.append((i,j))
+        
+        return self.available_pos
+
     def check_win(board, player):
         # Vertical
         if (board[0][0] == player and board[0][1] == player and board[0][2] == player):
