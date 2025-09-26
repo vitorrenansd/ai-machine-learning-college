@@ -5,6 +5,30 @@ class Game:
         print("Welcome!")
         self.show_board_status(board)
 
+        for turn in range(9):
+            if turn % 2 == 0:
+                i = int(input("Line: "))
+                j = int(input("Column: "))
+                if board[i][j] != " ":
+                    print("This position is not available.")
+                    continue
+                board[i][j] = "X"
+            else:
+                i,j = agent.choice(board)
+                board[i][j] = "O"
+                print(f"The agent choose {i},{j}")
+            self.show_board_status(board)
+
+            # Who won
+            if self.check_win(board, "X"):
+                print("You won!")
+                return
+            elif self.check_win(board, "O"):
+                print("Agent won...")
+                return
+        
+        print("Draw!")
+
     def show_board_status(self, board):
         print("  0    1   2 ")
         for i, line in enumerate(board):
