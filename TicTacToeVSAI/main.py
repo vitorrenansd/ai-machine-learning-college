@@ -1,4 +1,7 @@
 from game import Game
+from brute_force_agent import BruteForceAgent
 
 game = Game()
-game.play()
+agent = BruteForceAgent(game)
+
+game.play_with(agent)
