@@ -21,7 +21,7 @@ class Game:
         
         return available_pos
 
-    def check_win(board, player):
+    def check_win(self, board, player):
         # Vertical
         if (board[0][0] == player and board[0][1] == player and board[0][2] == player):
             return True
