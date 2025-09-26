@@ -1,6 +1,4 @@
 class Game:
-    def __init__(self):
-        self.available_pos = []
 
     def show_board_status(board):
         print("  0    1   2 ")
@@ -10,13 +8,13 @@ class Game:
                 print(" " + "-" * 13)
 
     def get_available_pos(self, board):
-        self.available_pos.clear()
+        available_pos = []
         for i in range(3):
             for j in range(3):
                 if board[i][j] == " ":
-                    self.available_pos.append((i,j))
+                    available_pos.append((i,j))
         
-        return self.available_pos
+        return available_pos
 
     def check_win(board, player):
         # Vertical
