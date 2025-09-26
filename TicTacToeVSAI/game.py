@@ -1,6 +1,11 @@
 class Game:
 
-    def show_board_status(board):
+    def play(self):
+        board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
+        print("Welcome!")
+        self.show_board_status(board)
+
+    def show_board_status(self, board):
         print("  0    1   2 ")
         for i, line in enumerate(board):
             print(f"{i}  {' | '.join(line)}")
