@@ -2,22 +2,22 @@ from city import City
 from adjacent import Adjacent
 
 class Map:
-    portoUniao = City("Porto União", 203)
+    portoUniao = City("Porto União", 203) ## name, distanceFromGoal
     pauloFrontin = City("Paulo Frontin", 172)
     canoinhas = City("Canoinhas", 141)
     irati = City("Irati", 139)
-    saoMateus = City("São Mateus")
-    mafra = City("Mafra")
-    tijucas = City("Tijucas do Sul")
-    curitiba = City("Curitiba", 0)
+    saoMateus = City("São Mateus", 123)
+    mafra = City("Mafra", 95)
+    tijucas = City("Tijucas do Sul", 57)
+    curitiba = City("Curitiba", 0) ## Goal
     araucaria = City("Araucária", 23)
     balsaNova = City("Balsa Nova", 41)
     campoLargo = City("Campo Largo", 27)
-    lapa = City("Lapa")
+    lapa = City("Lapa", 60)
     palmeira = City("Palmeira", 59)
-    contenda = City("Contenda")
-    saoJose = City("São José dos Pinhais")
-    tresBarras = City("Três Barras")
+    contenda = City("Contenda", 40)
+    saoJose = City("São José dos Pinhais", 14)
+    tresBarras = City("Três Barras", 130)
 
     portoUniao.add_adjacent_city(Adjacent(pauloFrontin))
     portoUniao.add_adjacent_city(Adjacent(canoinhas))
